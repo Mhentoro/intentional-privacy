@@ -1,0 +1,248 @@
+:root {
+  color-scheme: light dark;
+  --page: #f5f2ec;
+  --surface: #fffdf8;
+  --surface-soft: #e9eee8;
+  --ink: #1d2926;
+  --muted: #51615c;
+  --line: #c7d0cc;
+  --accent: #1f6657;
+  --accent-strong: #12473c;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent-strong);
+  text-decoration-thickness: 0.11em;
+  text-underline-offset: 0.18em;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 0.2rem;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 10;
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.5rem;
+  background: var(--surface);
+  transform: translateY(-180%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.shell {
+  width: min(100% - 2rem, 70rem);
+  margin-inline: auto;
+}
+
+.site-header {
+  padding: clamp(3rem, 8vw, 6rem) 0 clamp(2.5rem, 6vw, 4.5rem);
+  border-bottom: 1px solid var(--line);
+  background: var(--surface-soft);
+}
+
+.eyebrow,
+.language-label {
+  margin: 0 0 0.75rem;
+  color: var(--accent-strong);
+  font-size: 0.82rem;
+  font-weight: 750;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.18;
+  text-wrap: balance;
+}
+
+h1 {
+  max-width: 16ch;
+  margin: 0;
+  font-size: clamp(2.45rem, 8vw, 5.25rem);
+  letter-spacing: -0.045em;
+}
+
+h1 span {
+  display: inline-block;
+  margin-top: 0.45rem;
+  color: var(--accent-strong);
+  font-size: 0.52em;
+  letter-spacing: -0.02em;
+}
+
+.lede {
+  max-width: 46rem;
+  margin: 1.5rem 0 1.75rem;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+nav a {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--surface);
+  font-weight: 700;
+}
+
+main {
+  padding-block: 2rem 5rem;
+}
+
+
+article {
+  margin-top: 2rem;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--surface);
+}
+
+.article-header {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-header h2 {
+  margin: 0;
+  font-size: clamp(1.85rem, 5vw, 3rem);
+  letter-spacing: -0.025em;
+}
+
+.effective-date {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+section {
+  max-width: 52rem;
+  padding-top: 1.25rem;
+}
+
+section + section {
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--line);
+}
+
+h3 {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+p,
+li {
+  max-width: 72ch;
+}
+
+ul {
+  padding-left: 1.4rem;
+}
+
+li + li {
+  margin-top: 0.45rem;
+}
+
+.back-to-top {
+  margin: 2rem 0 0;
+  font-weight: 700;
+}
+
+.site-footer {
+  padding: 2rem 0 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #101715;
+    --surface: #18211e;
+    --surface-soft: #132b25;
+    --ink: #edf5f1;
+    --muted: #bdccc7;
+    --line: #3b4c47;
+    --accent: #78c5b4;
+    --accent-strong: #99dbcc;
+  }
+}
+
+@media (max-width: 38rem) {
+  .shell {
+    width: min(100% - 1.25rem, 70rem);
+  }
+
+  article {
+    border-radius: 0.7rem;
+  }
+}
+
+@media print {
+  :root {
+    --page: #ffffff;
+    --surface: #ffffff;
+    --surface-soft: #ffffff;
+    --ink: #000000;
+    --muted: #333333;
+    --line: #aaaaaa;
+    --accent: #000000;
+    --accent-strong: #000000;
+  }
+
+  .site-header {
+    padding-block: 1rem;
+  }
+
+  nav,
+  .skip-link,
+  .back-to-top {
+    display: none;
+  }
+
+  article {
+    break-inside: avoid-page;
+    border: 0;
+    padding: 0;
+  }
+}
