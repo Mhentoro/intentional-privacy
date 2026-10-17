@@ -4,195 +4,182 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
-  <meta name="description" content="Privacy policy for the Intentional Android closed beta." />
+  <meta name="description" content="Privacy policy for the Intentional Android app, including local data, Accessibility, optional rewarded ads, UMP and Google Play subscriptions." />
   <title>Intentional Privacy Policy / Политика за приватност</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to policy</a>
-
   <header class="site-header">
     <div class="shell">
-      <p class="eyebrow">Intentional · Google Play closed beta</p>
+      <p class="eyebrow">Intentional · Android app privacy</p>
       <h1>Privacy policy<br /><span lang="mk">Политика за приватност</span></h1>
-      <p class="lede">A local-first focus app. The closed-beta artifact processes product data on your device and contains no advertising, analytics, account, or cloud-sync service.</p>
+      <p class="lede">Intentional keeps your protection rules and usage insights on your device. The Google Play edition also includes optional Google rewarded ads, privacy-choice tools and Pro subscriptions.</p>
       <nav aria-label="Policy languages">
         <a href="#english">English</a>
         <a href="#macedonian" lang="mk">Македонски</a>
       </nav>
     </div>
   </header>
-
   <main id="main-content" class="shell">
-    <article id="english" lang="en" aria-labelledby="english-title">
+    <article id="english" lang="en">
       <header class="article-header">
         <p class="language-label">English</p>
-        <h2 id="english-title">Intentional privacy policy</h2>
-        <p class="effective-date"><strong>Effective date:</strong> September 9, 2026</p>
+        <h2>Intentional privacy policy</h2>
+        <p class="effective-date"><strong>Effective date:</strong> October 17, 2026</p>
       </header>
-
       <section aria-labelledby="en-about">
         <h3 id="en-about">1. About Intentional</h3>
-        <p>Intentional is a productivity and digital-wellbeing app that helps you pause before opening apps you choose, make conscious app-opening decisions, run focus sessions, and review factual local insights. This policy applies to the clean Google Play closed-beta artifact.</p>
-        <p>Intentional has no user account, Intentional backend, cloud sync, remote analytics, third-party telemetry, or advertising in this beta artifact. It contains no Google Mobile Ads, User Messaging Platform, or Google Play Billing SDK and does not request Internet access.</p>
+        <p>Intentional is an Android productivity and digital-wellbeing app that lets you choose which apps to protect, pause before opening them, manage focus sessions and review local usage insights. This policy covers the Intentional Android app distributed through Google Play, including the current closed-testing edition, and explains differences in the separate Offline edition.</p>
+        <p>The core protection and usage-history features work on your device. Intentional does not require an Intentional account, operate a developer-owned backend for personal usage data, provide cloud sync or include Firebase Analytics. The Google Play edition does include Google Mobile Ads, Google User Messaging Platform (UMP) and Google Play Billing components. These Google services can process information as explained below.</p>
       </section>
-
       <section aria-labelledby="en-local-data">
         <h3 id="en-local-data">2. Information kept on your device</h3>
-        <p>Intentional may keep the following in Android app-private storage so the features you choose can work:</p>
+        <p>To provide features you choose, Intentional can keep the following in Android app-private storage:</p>
         <ul>
-          <li>package identifiers for apps you select, protection rules, settings, language choice, and onboarding or disclosure acceptance;</li>
-          <li>intervention and session records, active-time checkpoints, extension, warning, cooldown, emergency-access, open-ended check-in, and local insight/profile facts;</li>
-          <li>an intention you enter inside Intentional, if you choose to enter one;</li>
-          <li>notification preferences and local notification/session identity;</li>
-          <li>Guardian policy, locally protected PIN-verification/recovery material, lockout state, requests, grants, and bounded factual audit records; and</li>
-          <li>closed-beta access configuration and other bounded local state required for safe recovery after process recreation.</li>
+        <li>the package identifiers of selected apps, protection rules, selection order, preferences, onboarding choices and language settings;</li>
+        <li>interventions, sessions, local active-use and insight records, warnings, cooldowns, Emergency Access and session-recovery state;</li>
+        <li>optional intentions you enter inside Intentional;</li>
+        <li>local notification preferences and identities;</li>
+        <li>Guardian/Parent authorization settings, locally protected PIN verification and recovery material, lockout and approval records;</li>
+        <li>rewarded-slot assignments, earned time limits and expiration records, and locally represented subscription/Pro entitlement state needed to restore access.</li>
         </ul>
-        <p>App backup and device-transfer extraction are disabled. Intentional does not deliberately store payment-card details, messages, passwords, typed text from another app, screenshots, contacts, browsing content, or another app's notification content.</p>
+        <p>App backup and Android device-transfer extraction are disabled for app-private data. Intentional does not deliberately save payment-card numbers, messages, other apps' text or passwords, screenshots, contacts, browsing pages, or other apps' notification content.</p>
       </section>
-
       <section aria-labelledby="en-accessibility">
         <h3 id="en-accessibility">3. Android Accessibility access</h3>
-        <p>Accessibility access is optional. If you affirmatively enable Intentional in Android Accessibility Settings, the service observes only window-state-change event type, the package name of the app in front, and event time. Intentional uses this information to recognize an app you selected, show its mindful pause, track confirmed active use, and carry out your selected session rule.</p>
-        <p>The service cannot retrieve window content and cannot perform gestures. It does not read screen text, messages, passwords, typed input, view hierarchies, notification content, URLs, screenshots, contacts, or other-app content. Accessibility-derived package and event information is processed on your device and is not sent to Intentional or shared with third parties.</p>
-        <p>You can pause Monitoring inside Intentional or disable the service in Android Accessibility Settings at any time. Protection cannot operate while the service is disabled.</p>
+        <p>Accessibility access is optional and requires you to enable Intentional in Android Accessibility Settings. To detect a protected foreground app and enforce the rules you selected, the service processes window-change event metadata, app package names and event timing on your device.</p>
+        <p>The service is configured not to retrieve window content or perform gestures. Intentional does not use this service to read messages, passwords, typed text, view hierarchies, notification bodies, URLs or screenshots. Accessibility-derived app and event details are used locally for protection and usage calculations, not uploaded to a developer server or supplied to advertising SDKs for targeting.</p>
+        <p>You may pause Monitoring in Intentional or disable the Accessibility service in Android settings. App protection cannot operate while the service is disabled.</p>
       </section>
-
       <section aria-labelledby="en-processing">
-        <h3 id="en-processing">4. Processing, sharing, ads, and sales</h3>
-        <p>Intentional calculates sessions, reports, and profile insights locally. The developer does not collect or share this product data off-device, and Intentional does not sell it.</p>
-        <p>This closed-beta artifact has no advertising, ad identifiers, analytics, Billing, GMA, UMP, Intentional backend, account system, cloud sync, or advertising/network SDK path. Android and Google Play may separately process installation, security, store, and device information under their own policies.</p>
+        <h3 id="en-processing">4. Ads, subscriptions, third-party processing and sharing</h3>
+        <p><strong>Core app information:</strong> Protection rules, recorded app usage, session history, Guardian settings and optional intentions are processed locally. We do not run a service that receives this core product data, and we do not sell it.</p>
+        <p><strong>Optional rewarded advertising:</strong> In the Google Play edition you can choose to view a rewarded ad to unlock an additional protected-app slot for a limited period (currently 24 hours). Closed-testing builds use Google's demonstration ads; a later public build may use commercial ads. You do not have to watch ads to use the two permanent Free slots.</p>
+        <p><strong>Google Mobile Ads SDK:</strong> Google's advertising SDK may automatically collect or share IP addresses (which can indicate approximate location), product interactions (including ad views and taps), diagnostics, and device or app identifiers. Google describes uses including advertising, analytics and fraud prevention. Intentional does not request Android's AD_ID permission, but that does not mean the Google SDK processes no other identifiers. The developer does not operate a separate advertising analytics service.</p>
+        <p><strong>Consent:</strong> The Google User Messaging Platform (UMP) SDK supports privacy notices and choices where applicable. Whether a consent message or a privacy-options control is required depends on region and configured Google messages. Advertising requests are subject to the app's applicable consent checks. Rejecting optional consent or not watching an ad does not necessarily prevent all processing by Google services for other permitted purposes.</p>
+        <p><strong>Google Play Billing:</strong> If you choose a Pro subscription, billing and payment details are handled through Google Play. The app checks purchase/entitlement information to enable or restore Pro access; local purchase status or verification information may be retained for that purpose. We do not receive or store your full payment-card number.</p>
+        <p><strong>Third-party policies:</strong> Google's processing is subject to the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a> and its <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer">advertising technologies information</a>. Google Play may separately process purchase, installation and security data.</p>
+        <p><strong>Offline edition:</strong> The separately distributed Offline flavor excludes Google Mobile Ads, UMP and Google Play Billing. A static Intentional developer website is hosted separately on Firebase Hosting; this does not mean that Firebase Analytics or a Firebase Android SDK is integrated into Intentional.</p>
       </section>
-
       <section aria-labelledby="en-notifications-export">
         <h3 id="en-notifications-export">5. Notifications and exports</h3>
-        <p>Notification permission is optional. Intentional notifications contain factual Intentional session state and local action identity. Intentional does not read other apps' notifications.</p>
-        <p>Export starts only after you choose CSV or full local JSON and select a destination through Android's document picker. A destination may be provided by another app or a cloud-backed document provider governed by its own policy. Intentional does not automatically upload an export, and the developer does not receive a copy. Once an export is outside Intentional's app storage, you must delete it separately at its destination.</p>
+        <p>Android notification permission is optional. Intentional notifications display factual local session state and do not read other apps' notification content.</p>
+        <p>Exports occur only when you choose a CSV or local JSON export and a destination using Android's document picker. The destination may be another app or cloud provider with its own privacy rules. Intentional does not automatically send exports to the developer. Delete copies at their chosen destination separately.</p>
       </section>
-
       <section aria-labelledby="en-retention">
-        <h3 id="en-retention">6. Retention and deletion</h3>
-        <p>Local information remains until you use the applicable in-app deletion control, clear the app's storage, uninstall Intentional, or a bounded product rule removes temporary state.</p>
+        <h3 id="en-retention">6. Retention, deletion and privacy choices</h3>
+        <p>Local product data is retained until you use relevant deletion controls, clear app storage, uninstall the app or an applicable expiration rule removes temporary state:</p>
         <ul>
-          <li><strong>Delete history</strong> removes historical activity/profile source records and suggestion dismissals while retaining current protection rules and goal definitions, as explained in its confirmation.</li>
-          <li><strong>Delete all local data</strong> clears Intentional's local product data, Guardian data, settings, diagnostics, and notifications, then returns the app to fresh onboarding.</li>
-          <li><strong>Uninstall or Clear storage</strong> removes Android app-private Intentional data. It cannot remove files you exported to another destination.</li>
+        <li><strong>Delete history</strong> removes historical activity and related insight data while retaining active protection rules and goals as explained by the in-app confirmation.</li>
+        <li><strong>Delete all local data</strong> clears local product data, Guardian settings and other local settings and returns the app to onboarding.</li>
+        <li><strong>Clear storage or uninstall</strong> removes Android app-private Intentional data, but not exports saved elsewhere or information already handled independently by Google.</li>
         </ul>
-        <p>Intentional has no account-deletion process because it creates no Intentional account.</p>
+        <p>Since Intentional has no Intentional account, there is no developer account to delete. To control local monitoring, disable its Accessibility permission. You can choose not to request rewarded ads, and use any applicable privacy-options control provided in the app or by Google. Google manages retention and applicable rights requests for data it processes under its own policies; deleting local Intentional records does not automatically delete Google's records.</p>
       </section>
-
       <section aria-labelledby="en-security">
         <h3 id="en-security">7. Security and platform limits</h3>
-        <p>Local data is protected by Android app sandboxing. Guardian verification and recovery material also use Android Keystore-backed local protection. Intentional is an app-level protection layer, not Device Owner, MDM, kiosk, uninstall-proof, or clear-storage-proof control. A rooted or compromised device, or a user with system-level control, can bypass app-level protections.</p>
+        <p>Core local data is kept in Android's app-private storage and protected by Android app isolation. Guardian PIN verification and recovery material uses Android Keystore-backed local protections. Communications performed by third-party Google SDKs use their own security mechanisms, which must be considered separately from the local app.</p>
+        <p>Intentional is not Device Owner, mobile-device management, kiosk mode or an uninstall-proof solution. Root access, compromised devices or users with system-level control can defeat app-level safeguards.</p>
       </section>
-
       <section aria-labelledby="en-health">
         <h3 id="en-health">8. Wellness and non-medical disclaimer</h3>
-        <p>Intentional's breathing/pause experience supports focus, relaxation, stress management, and mental acuity in a general wellness and productivity context. Intentional is not a medical device and does not diagnose, treat, cure, or prevent any medical condition. It collects no health or fitness data, does not use Health Connect or body sensors, and makes no clinical claim. Consult a qualified healthcare professional for medical advice, diagnosis, or treatment.</p>
+        <p>Intentional supports general focus, relaxation and productivity. It is not a medical device and does not diagnose, treat, cure or prevent a medical condition. The app does not request health or fitness data, use Health Connect or body sensors, or provide medical advice.</p>
       </section>
-
       <section aria-labelledby="en-children">
         <h3 id="en-children">9. Audience</h3>
-        <p>The closed beta is intended for people aged 16 and over. It is not designed or marketed for younger children.</p>
+        <p>Intentional is intended for people aged 16 and over and is not designed for younger children. Any age-related advertising restrictions and the declared Google Play target audience must be respected in the applicable app configuration.</p>
       </section>
-
       <section aria-labelledby="en-changes-contact">
         <h3 id="en-changes-contact">10. Changes and contact</h3>
-        <p>This policy will be updated before a release changes data access, permissions, SDKs, accounts/backend, analytics, Billing, or advertising. The published policy for each release must describe that exact artifact.</p>
-        <p><strong>Privacy questions:</strong> <a href="mailto:intentionalstudiodev@gmail.com">intentionalstudiodev@gmail.com</a><br />
-          <strong>Developer/legal entity:</strong> Goce Nasteski</p>
+        <p>We may update this notice when product features, third-party SDKs, permissions, data processing or legal requirements change. The effective date above identifies this version. Please check the current published policy and the app's in-app notices.</p>
+        <p><strong>Privacy contact:</strong> <a href="mailto:intentionalstudiodev@gmail.com">intentionalstudiodev@gmail.com</a><br />
+        <strong>Developer/legal entity:</strong> Goce Nasteski</p>
       </section>
-
       <p class="back-to-top"><a href="#main-content">Back to top</a></p>
     </article>
 
-    <article id="macedonian" lang="mk" aria-labelledby="macedonian-title">
+    <article id="macedonian" lang="mk">
       <header class="article-header">
         <p class="language-label">Македонски</p>
-        <h2 id="macedonian-title">Политика за приватност на Intentional</h2>
-        <p class="effective-date"><strong>Датум на стапување во сила:</strong> 9 септември 2026</p>
+        <h2>Политика за приватност на Intentional</h2>
+        <p class="effective-date"><strong>Датум на стапување во сила:</strong> 17 октомври 2026</p>
       </header>
-
       <section aria-labelledby="mk-about">
         <h3 id="mk-about">1. За Intentional</h3>
-        <p>Intentional е апликација за продуктивност и дигитална благосостојба која ти помага да застанеш пред да отвориш избрани апликации, свесно да одлучиш дали да продолжиш, да користиш сесии за фокус и да прегледуваш фактички локални увиди. Оваа политика важи за чистата верзија за затворено тестирање на Google Play.</p>
-        <p>Intentional нема корисничка сметка, сопствен сервер, синхронизација во облак, далечинска аналитика, телеметрија од трета страна или рекламирање во оваа бета-верзија. Во неа нема Google Mobile Ads, User Messaging Platform или Google Play Billing SDK и не бара пристап до интернет.</p>
+        <p>Intentional е Android апликација за продуктивност и дигитална благосостојба со која избираш кои апликации ќе бидат заштитени, добиваш свесна пауза пред отворањето, користиш сесии за фокус и прегледуваш локални увиди за користењето. Оваа политика се однесува на Intentional за Android што се дистрибуира преку Google Play, вклучувајќи го тековното затворено тестирање, и ги објаснува разликите со посебната Offline верзија.</p>
+        <p>Основните функции за заштита и историја работат на твојот уред. Intentional не бара сопствена корисничка сметка, нема сервер на развивачот за личната историја на користење, не нуди синхронизација во облак и не содржи Firebase Analytics. Верзијата за Google Play содржи Google Mobile Ads, Google User Messaging Platform (UMP) и Google Play Billing. Овие услуги на Google може да обработуваат информации како што е објаснето подолу.</p>
       </section>
-
       <section aria-labelledby="mk-local-data">
-        <h3 id="mk-local-data">2. Информации што остануваат на твојот уред</h3>
-        <p>Intentional може да го чува следново во приватното складиште на апликацијата на Android за да работат функциите што ги избираш:</p>
+        <h3 id="mk-local-data">2. Информации што се чуваат на уредот</h3>
+        <p>За да работат избраните функции, Intentional може да ги чува следните информации во приватното складиште на Android апликацијата:</p>
         <ul>
-          <li>идентификатори на пакетите за избраните апликации, правила за заштита, поставки, избор на јазик и прифаќање на воведувањето или известувањето;</li>
-          <li>записи за паузите и сесиите, контролни точки за активно време, додадено време, предупредувања, периоди на ладење, итен пристап, проверки без временско ограничување и локални факти за увидите/профилот;</li>
-          <li>намера што ја внесуваш во Intentional, ако избереш да внесеш;</li>
-          <li>поставки за известувања и локален идентитет на известувањето/сесијата;</li>
-          <li>правила за Guardian, локално заштитени материјали за проверка/обнова на PIN, состојба на заклучување, барања, одобрувања и ограничени фактички ревизорски записи; и</li>
-          <li>поставки за пристап во затворената бета и друга ограничена локална состојба потребна за безбедно обновување по повторно создавање на процесот.</li>
+        <li>идентификатори на избраните апликации, правила за заштита, редослед на избирање, поставки, почетни избори и јазик;</li>
+        <li>записи за интервенции, сесии, локално активно користење, увиди, предупредувања, периоди на чекање, Итен пристап и обновување сесии;</li>
+        <li>намера што доброволно ја внесуваш во Intentional;</li>
+        <li>локални поставки и идентификатори за известувања;</li>
+        <li>правила за Guardian/родителско одобрување, локално заштитен материјал за проверка и обнова на PIN, заклучувања и одобрувања;</li>
+        <li>доделени рекламни слотови, заработени временски ограничувања и рокови на истекување, како и локална состојба на Pro претплата потребна за враќање на пристапот.</li>
         </ul>
-        <p>Резервната копија и преносот на податоците на апликацијата се исклучени. Intentional намерно не чува податоци од платежна картичка, пораки, лозинки, внесен текст од друга апликација, слики од екранот, контакти, содржина од прелистување или содржина од известувања на друга апликација.</p>
+        <p>Резервните копии и преносот на приватните податоци на апликацијата на друг Android уред се исклучени. Intentional намерно не зачувува броеви од платежни картички, пораки, текст или лозинки од други апликации, слики од екранот, контакти, посетени веб-страници или содржина од известувања на други апликации.</p>
       </section>
-
       <section aria-labelledby="mk-accessibility">
-        <h3 id="mk-accessibility">3. Пристап за пристапност на Android</h3>
-        <p>Пристапот за пристапност е изборен. Ако изречно го овозможиш Intentional во поставките за пристапност на Android, услугата ги забележува само видот на настанот за промена на прозорецот, името на пакетот на апликацијата што е напред и времето на настанот. Intentional ги користи овие информации за да препознае избрана апликација, да ја прикаже свесната пауза, да го мери потврденото активно користење и да го спроведе избраното правило за сесија.</p>
-        <p>Услугата не може да ја презема содржината на прозорецот и не може да извршува гестови. Не чита текст од екранот, пораки, лозинки, внесен текст, хиерархија на прикази, содржина од известувања, URL-адреси, слики од екранот, контакти или содржина од други апликации. Името на пакетот и времето на настанот добиени преку пристапноста се обработуваат на твојот уред и не се испраќаат до Intentional ниту се споделуваат со трети страни.</p>
-        <p>Можеш да го паузираш Следењето во Intentional или во секое време да ја исклучиш услугата во поставките за пристапност на Android. Заштитата не може да работи додека услугата е исклучена.</p>
+        <h3 id="mk-accessibility">3. Пристап до Accessibility на Android</h3>
+        <p>Пристапот до Accessibility е изборен и се овозможува изречно во Android Settings. За да препознае заштитена апликација во преден план и да ги спроведе избраните правила, услугата обработува метаподатоци за промени на прозорци, имиња на пакети на апликации и време на настани локално на уредот.</p>
+        <p>Услугата е конфигурирана да не презема содржина од прозорци и да не извршува гестови. Intentional не ја користи за читање пораки, лозинки, внесен текст, хиерархии на прикази, содржина од известувања, URL-адреси или слики од екранот. Податоците за апликацијата и настаните од Accessibility се користат локално за заштита и пресметка на користење, а не се прикачуваат на сервер на развивачот или се доставуваат до рекламните SDK-компоненти за таргетирање.</p>
+        <p>Можеш да го паузираш Monitoring во Intentional или да ја исклучиш Accessibility услугата во Android. Заштитата не може да работи додека услугата е исклучена.</p>
       </section>
-
       <section aria-labelledby="mk-processing">
-        <h3 id="mk-processing">4. Обработка, споделување, реклами и продажба</h3>
-        <p>Intentional локално ги пресметува сесиите, извештаите и увидите од профилот. Развивачот не ги собира и не ги споделува овие податоци надвор од уредот, а Intentional не ги продава.</p>
-        <p>Оваа верзија за затворено тестирање нема реклами, рекламни идентификатори, аналитика, Billing, GMA, UMP, сопствен сервер на Intentional, кориснички сметки, синхронизација во облак или SDK-патека за рекламирање/мрежа. Android и Google Play може одделно да обработуваат информации за инсталацијата, безбедноста, продавницата и уредот според нивните политики.</p>
+        <h3 id="mk-processing">4. Реклами, претплати, трети страни и споделување</h3>
+        <p><strong>Основни податоци:</strong> Правилата за заштита, историјата на користење, сесиите, Guardian поставките и доброволно внесените намери се обработуваат локално. Немаме сопствен сервер што ги прима овие основни податоци и не ги продаваме.</p>
+        <p><strong>Доброволни реклами со награда:</strong> Во верзијата за Google Play можеш доброволно да изгледаш реклама и да отклучиш дополнителен слот за заштитена апликација на ограничен период (моментално 24 часа). Во затвореното тестирање се користат демонстрациски реклами на Google; подоцнежна јавна верзија може да користи комерцијални реклами. Не мора да гледаш реклами за да ги користиш двата трајни Free слота.</p>
+        <p><strong>Google Mobile Ads SDK:</strong> Рекламната компонента на Google може автоматски да собира или споделува IP-адреси (од кои може да се процени приближна локација), интеракции со апликацијата (вклучувајќи прикажувања и допири на реклами), дијагностички информации и идентификатори на уред или апликација. Google наведува цели како рекламирање, аналитика и спречување измами. Intentional не ја бара Android дозволата AD_ID, но тоа не значи дека Google SDK не обработува други идентификатори. Развивачот нема посебна услуга за рекламна аналитика.</p>
+        <p><strong>Согласност:</strong> Google User Messaging Platform (UMP) поддржува известувања и избори за приватност таму каде што се применливи. Дали е потребна порака за согласност или контрола за приватност зависи од регионот и конфигурираните пораки на Google. Барањата за реклами зависат од соодветните проверки за согласност во апликацијата. Одбивање изборна согласност или негледање реклама не мора да значи дека се спречува секоја обработка од Google за други дозволени цели.</p>
+        <p><strong>Google Play Billing:</strong> Ако избереш Pro претплата, наплатата и платежните информации ги обработува Google Play. Апликацијата проверува информации за купувањето и правото на пристап за да овозможи или врати Pro, а локално може да ја чува состојбата на купувањето или потврдата за таа цел. Не го добиваме и не го чуваме целиот број на платежната картичка.</p>
+        <p><strong>Политики на трети страни:</strong> За обработката на Google важат <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Политиката за приватност на Google</a> и <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer">информациите за рекламните технологии</a>. Google Play одделно може да обработува информации за купувања, инсталации и безбедност.</p>
+        <p><strong>Offline верзија:</strong> Посебно дистрибуираната Offline верзија не вклучува Google Mobile Ads, UMP или Google Play Billing. Посебната веб-страница на Intentional користи Firebase Hosting; тоа не значи дека во Android апликацијата има Firebase Analytics или Firebase SDK.</p>
       </section>
-
       <section aria-labelledby="mk-notifications-export">
         <h3 id="mk-notifications-export">5. Известувања и извоз</h3>
-        <p>Дозволата за известувања е изборна. Известувањата на Intentional содржат фактичка состојба на сесијата во Intentional и локален идентитет на дејството. Intentional не ги чита известувањата од други апликации.</p>
-        <p>Извозот започнува само откако ќе избереш CSV или целосен локален JSON и одредиш дестинација преку избирачот на документи на Android. Дестинацијата може да ја обезбедува друга апликација или давател на документи во облак кој има сопствена политика. Intentional не прикачува извоз автоматски, а развивачот не добива копија. Откако извозот ќе биде надвор од складиштето на Intentional, мора одделно да го избришеш на неговата дестинација.</p>
+        <p>Android дозволата за известувања е изборна. Известувањата на Intentional ја прикажуваат фактичката локална состојба на сесиите и не ја читаат содржината на известувања од други апликации.</p>
+        <p>Извоз се врши само кога ќе избереш CSV или локален JSON и дестинација преку Android избирачот на документи. Дестинацијата може да биде друга апликација или услуга во облак со сопствени правила за приватност. Intentional не испраќа автоматски извози на развивачот. Датотеките извезени на друга локација се бришат одделно таму.</p>
       </section>
-
       <section aria-labelledby="mk-retention">
-        <h3 id="mk-retention">6. Задржување и бришење</h3>
-        <p>Локалните информации остануваат додека не ја употребиш соодветната контрола за бришење во апликацијата, не го исчистиш складиштето на апликацијата, не го деинсталираш Intentional или ограничено правило на производот не отстрани привремена состојба.</p>
+        <h3 id="mk-retention">6. Задржување, бришење и избори за приватност</h3>
+        <p>Локалните податоци остануваат додека не искористиш соодветна контрола за бришење, не го исчистиш складиштето, не ја деинсталираш апликацијата или привремена состојба не истече според нејзиното правило:</p>
         <ul>
-          <li><strong>Избриши историја</strong> ги отстранува историските записи за активностите/изворите на профилот и отфрлањата на предлозите, а ги задржува тековните правила за заштита и дефинициите на целите, како што е објаснето во потврдата.</li>
-          <li><strong>Избриши ги сите локални податоци</strong> ги отстранува локалните податоци на Intentional, податоците на Guardian, поставките, дијагностиката и известувањата, а потоа ја враќа апликацијата на почетното воведување.</li>
-          <li><strong>Деинсталирање или Исчисти складиште</strong> ги отстранува приватните податоци на Intentional од Android. Не може да ги отстрани датотеките извезени на друга дестинација.</li>
+        <li><strong>Delete history / Избриши историја</strong> ги брише историските записи за активности и поврзаните увиди, но ги задржува активните правила и цели како што објаснува потврдата во апликацијата.</li>
+        <li><strong>Delete all local data / Избриши ги сите локални податоци</strong> ги брише локалните податоци, Guardian поставките и другите локални поставки, и ја враќа апликацијата на почетното воведување.</li>
+        <li><strong>Clear storage или деинсталирање</strong> ги отстранува приватните Android податоци на Intentional, но не и извезените датотеки на други локации или податоците што Google веќе ги обработил независно.</li>
         </ul>
-        <p>Intentional нема постапка за бришење сметка затоа што не создава сметка на Intentional.</p>
+        <p>Бидејќи Intentional нема сопствена корисничка сметка, нема сметка кај развивачот што треба да се избрише. Локалното следење можеш да го контролираш со исклучување на Accessibility. Можеш да одлучиш да не бараш реклами со награда и да користиш соодветна контрола за приватност ако ја прикажуваат апликацијата или Google. Google ги управува задржувањето и соодветните барања за податоците што ги обработува според сопствените политики; бришењето на локалните записи не ги брише автоматски записите на Google.</p>
       </section>
-
       <section aria-labelledby="mk-security">
         <h3 id="mk-security">7. Безбедност и ограничувања на платформата</h3>
-        <p>Локалните податоци се заштитени со изолацијата на апликациите во Android. Материјалите за проверка и обнова на Guardian користат и локална заштита поддржана од Android Keystore. Intentional е заштитен слој на ниво на апликација, а не Device Owner, MDM, киоск, ниту контрола отпорна на деинсталирање или чистење на складиштето. Уред со root-пристап, компромитиран уред или корисник со системска контрола може да ги заобиколи заштитите на ниво на апликација.</p>
+        <p>Основните локални податоци се чуваат во приватното складиште и се заштитени преку Android изолацијата на апликациите. Материјалите за проверка и обнова на Guardian PIN користат локална заштита со Android Keystore. Комуникациите на Google SDK-компонентите користат сопствени безбедносни механизми, кои се разгледуваат одделно од локалната апликација.</p>
+        <p>Intentional не е Device Owner, MDM, киоск или решение што не може да се деинсталира. Root-пристап, компромитиран уред или корисник со системска контрола може да ги заобиколи заштитите на ниво на апликација.</p>
       </section>
-
       <section aria-labelledby="mk-health">
         <h3 id="mk-health">8. Благосостојба и немедицинско одрекување</h3>
-        <p>Вежбата за дишење/пауза во Intentional поддржува фокус, релаксација, управување со стрес и ментална острина во општ контекст на благосостојба и продуктивност. Intentional не е медицински уред и не дијагностицира, лекува, излекува ниту спречува медицинска состојба. Не собира здравствени или фитнес-податоци, не користи Health Connect или телесни сензори и не дава клинички тврдења. За медицински совет, дијагноза или лекување, консултирај се со квалификуван здравствен работник.</p>
+        <p>Intentional помага со општ фокус, релаксација и продуктивност. Не е медицински уред и не дијагностицира, лекува, излекува или спречува медицинска состојба. Апликацијата не бара здравствени и фитнес-податоци, не користи Health Connect или телесни сензори и не дава медицински совет.</p>
       </section>
-
       <section aria-labelledby="mk-children">
         <h3 id="mk-children">9. Публика</h3>
-        <p>Затворената бета е наменета за лица на возраст од 16 години и повеќе. Не е дизајнирана ниту се промовира за помали деца.</p>
+        <p>Intentional е наменет за лица на возраст од 16 години и повеќе и не е создаден за помали деца. Мора да се почитуваат применливите ограничувања за реклами според возраста и пријавената целна публика во Google Play.</p>
       </section>
-
       <section aria-labelledby="mk-changes-contact">
         <h3 id="mk-changes-contact">10. Промени и контакт</h3>
-        <p>Оваа политика ќе биде ажурирана пред издание што го менува пристапот до податоци, дозволите, SDK-компонентите, сметките/серверот, аналитиката, Billing или рекламирањето. Објавената политика за секое издание мора да го опишува токму тој артефакт.</p>
-        <p><strong>Прашања за приватност:</strong> <a href="mailto:intentionalstudiodev@gmail.com">intentionalstudiodev@gmail.com</a><br />
-          <strong>Развивач/правно лице:</strong> Goce Nasteski</p>
+        <p>Ова известување може да се ажурира кога ќе се променат функциите, SDK-компонентите од трети страни, дозволите, обработката на податоци или законските барања. Датумот погоре ја означува оваа верзија. Провери ја тековната политика и известувањата во апликацијата.</p>
+        <p><strong>Контакт за приватност:</strong> <a href="mailto:intentionalstudiodev@gmail.com">intentionalstudiodev@gmail.com</a><br />
+        <strong>Развивач/правно лице:</strong> Goce Nasteski</p>
       </section>
-
       <p class="back-to-top"><a href="#main-content">Назад на почеток</a></p>
     </article>
   </main>
-
   <footer class="site-footer">
     <div class="shell">
-      <p>Intentional · Privacy policy for the clean closed-beta artifact</p>
-      <p lang="mk">Intentional · Политика за приватност за чистата верзија за затворено тестирање</p>
+      <p>Intentional · Android Privacy Policy</p>
+      <p lang="mk">Intentional · Политика за приватност за Android</p>
     </div>
   </footer>
 </body>

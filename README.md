@@ -1,24 +1,28 @@
 # Intentional Privacy Policy site
 
-Final static privacy-policy site for the Intentional Google Play closed beta.
+Static bilingual (English / Macedonian) Privacy Policy for the Intentional Android application.
 
-## Finalized details
+- Site: https://mhentoro.github.io/intentional-privacy/
+- Developer: Goce Nasteski
+- Privacy contact: intentionalstudiodev@gmail.com
+- Current draft effective date: October 17, 2026
+- Core Android protection data is processed locally.
+- Google Play edition includes Google Mobile Ads (optional rewarded ads), Google UMP and Play Billing for Pro.
+- Separately distributed Offline edition excludes Ads/UMP/Billing.
+- Static privacy site itself has no JavaScript, cookies, analytics, third-party fonts or trackers.
+- The separately hosted Firebase developer landing site is not a Firebase Android SDK integration.
 
-- Developer/legal entity: Goce Nasteski
-- Privacy/support contact: intentionalstudiodev@gmail.com
-- Effective date: September 9, 2026
-- Languages: English and Macedonian
-- No JavaScript, cookies, analytics, tracking pixels, external fonts, forms, or third-party assets
+## Publishing
 
-## Publish with GitHub Pages
+Replace the repository-root `index.html` with the supplied revised file. Keep the existing `styles.css` unchanged. GitHub Pages will then serve the update at the existing Privacy Policy URL.
 
-1. Create a **public** GitHub repository, for example `intentional-privacy`.
-2. Upload `index.html` and `styles.css` to the repository root.
-3. In **Settings → Pages**, choose **Deploy from a branch**.
-4. Select branch `main` and folder `/ (root)`, then save.
-5. Wait for the public HTTPS Pages URL and confirm the page opens without sign-in.
-6. Put that exact HTTPS URL into Google Play Console → Privacy Policy.
+## Owner-side review before publishing / before Production
 
-The `_headers` file is only useful on hosts that support that convention (for example Cloudflare Pages); GitHub Pages does not apply those headers.
+1. Confirm Google Play target audience agrees with the stated 16+ audience.
+2. Confirm the released Play manifest/SDK inventory including no AD_ID, GMA/UMP/Billing, and app permissions.
+3. Confirm UMP privacy message configuration and the actual in-app privacy options flow for target regions.
+4. Reconcile Google Play Data Safety declarations with Google Mobile Ads disclosures (IP address, product interactions, diagnostics and other app/device identifiers).
+5. Confirm in-app Privacy Policy link, Accessibility disclosure and locally available deletion/export controls.
+6. Recheck the policy when switching demo rewarded ads to commercial advertising.
 
-The policy describes the current clean closed-beta artifact. Review and update it before distributing a future artifact whose permissions, SDKs, network behavior, Billing, analytics, accounts, cloud behavior, or advertising differ.
+Privacy Policy text is not legal advice. The publisher is responsible for verifying it against the distributed binary, Google settings, local law, and other applicable policy requirements.
